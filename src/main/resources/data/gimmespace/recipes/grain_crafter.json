@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#@#",
+    "@^@",
+    "#@#"
+  ],
+  "key": {
+    "#": {
+      "item": "gimmespace:screw_bucket"
+    },
+    "@": {
+      "item": "minecraft:iron_ingot"
+    },
+    "^": {
+      "item": "gimmespace:ammonia_bottle"
+    }
+  },
+  "result": {
+    "item": "gimmespace:grain_crafter"
+  }
+}

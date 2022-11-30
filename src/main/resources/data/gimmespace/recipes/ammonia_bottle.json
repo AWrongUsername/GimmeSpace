@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:water_bucket"
+    },
+    {
+      "item": "gimmespace:limestone_gas_canister"
+    }
+  ],
+  "result": {
+    "item": "gimmespace:ammonia_bottle",
+    "count": 1
+  }
+}
