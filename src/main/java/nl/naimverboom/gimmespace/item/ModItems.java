@@ -13,7 +13,7 @@ public class ModItems {
     public static final RegistryObject<Item> SCREW_BUCKET = ITEMS.register("screw_bucket", () -> new Item(new Item.Properties().stacksTo(16).tab(ModCreativeModeTab.GIMMESPACE_TAB)));
     public static final RegistryObject<Item> AMMONIA_BOTTLE = ITEMS.register("ammonia_bottle", () -> new Item(new Item.Properties().stacksTo(64).tab(ModCreativeModeTab.GIMMESPACE_TAB)));
     public static final RegistryObject<Item> LIMESTONE_GAS_CANISTER = ITEMS.register("limestone_gas_canister", () -> new Item(new Item.Properties().stacksTo(64).tab(ModCreativeModeTab.GIMMESPACE_TAB)));
-
+    public static final RegistryObject<Item> RUBBER_PELLETS = ITEMS.register("rubber_pellets",() -> new Item(new Item.Properties().stacksTo(64).tab(ModCreativeModeTab.GIMMESPACE_TAB)));
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
     }
