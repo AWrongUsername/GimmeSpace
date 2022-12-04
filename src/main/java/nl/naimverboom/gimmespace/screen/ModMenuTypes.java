@@ -11,9 +11,12 @@ import net.minecraftforge.registries.RegistryObject;
 import nl.naimverboom.gimmespace.GimmeSpace;
 
 public class ModMenuTypes {
-    public static final DeferredRegister<MenuType<?>> MENUS = DeferredRegister.create(ForgeRegistries.MENU_TYPES, GimmeSpace.MOD_ID);
+    public static final DeferredRegister<MenuType<?>> MENUS =
+            DeferredRegister.create(ForgeRegistries.MENU_TYPES, GimmeSpace.MOD_ID);
 
-    public static final RegistryObject<MenuType<LimestoneSmelterMenu>> LIMESTONE_SMELTER_MENU = registerMenuType(LimestoneSmelterMenu::new, "limestone_smelter_menu");
+    public static final RegistryObject<MenuType<LimestoneSmelterMenu>> LIMESTONE_SMELTER_MENU =
+            registerMenuType(LimestoneSmelterMenu::new, "limestone_smelter_menu");
+
 
     private static <T extends AbstractContainerMenu> RegistryObject<MenuType<T>> registerMenuType(IContainerFactory<T> factory,
                                                                                                   String name) {
