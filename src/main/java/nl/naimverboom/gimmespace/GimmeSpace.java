@@ -1,6 +1,7 @@
 package nl.naimverboom.gimmespace;
 
 import com.mojang.logging.LogUtils;
+import net.minecraft.client.gui.screens.MenuScreens;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -11,7 +12,10 @@ import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.registries.ForgeRegistries;
 import nl.naimverboom.gimmespace.block.ModBlocks;
+import nl.naimverboom.gimmespace.block.entity.ModBlockEntities;
 import nl.naimverboom.gimmespace.item.ModItems;
+import nl.naimverboom.gimmespace.screen.LimestoneSmelterScreen;
+import nl.naimverboom.gimmespace.screen.ModMenuTypes;
 import org.slf4j.Logger;
 
 // The value here should match an entry in the META-INF/mods.toml file
@@ -27,6 +31,8 @@ public class GimmeSpace
 
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
+        ModBlockEntities.register(modEventBus);
+        ModMenuTypes.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
 
@@ -37,7 +43,7 @@ public class GimmeSpace
     public static class ClientModEvents {
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event) {
-
+            MenuScreens.register(ModMenuTypes.LIMESTONE_SMELTER_MENU.get(), LimestoneSmelterScreen::new);
         }
     }
 

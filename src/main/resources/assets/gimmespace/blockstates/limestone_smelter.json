@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "gimmespace:block/limestone_smelter"
+    },
+    "facing=south": {
+      "model": "gimmespace:block/limestone_smelter",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "gimmespace:block/limestone_smelter",
+      "y": 270
+    },
+    "facing=east": {
+      "model": "gimmespace:block/limestone_smelter",
+      "y": 90
+    }
+  }
+}
