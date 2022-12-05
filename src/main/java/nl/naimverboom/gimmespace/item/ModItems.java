@@ -2,6 +2,7 @@ package nl.naimverboom.gimmespace.item;
 
 import net.minecraft.world.item.Item;
 import net.minecraftforge.eventbus.api.IEventBus;
+import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
@@ -14,6 +15,7 @@ public class ModItems {
     public static final RegistryObject<Item> AMMONIA_BOTTLE = ITEMS.register("ammonia_bottle", () -> new Item(new Item.Properties().stacksTo(64).tab(ModCreativeModeTab.GIMMESPACE_TAB)));
     public static final RegistryObject<Item> LIMESTONE_GAS_CANISTER = ITEMS.register("limestone_gas_canister", () -> new Item(new Item.Properties().stacksTo(64).tab(ModCreativeModeTab.GIMMESPACE_TAB)));
     public static final RegistryObject<Item> RUBBER_PELLETS = ITEMS.register("rubber_pellets",() -> new Item(new Item.Properties().stacksTo(64).tab(ModCreativeModeTab.GIMMESPACE_TAB)));
+    public static final RegistryObject<Item> Neopreme = ITEMS.register("neopreme",() -> new Item(new Item.Properties().stacksTo(64).tab(ModCreativeModeTab.GIMMESPACE_TAB)));
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
     }

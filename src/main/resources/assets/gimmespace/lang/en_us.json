@@ -3,10 +3,12 @@
   "item.gimmespace.ammonia_bottle": "Bottle of Ammonia",
   "item.gimmespace.limestone_gas_canister": "Limestone Gas Canister",
   "item.gimmespace.rubber_pellets": "Rubber Pellets",
+  "item.gimmespace.neopreme": "Neopreme",
 
   "block.gimmespace.basic_solid_rocket_fuel": "Basic Solid Rocket Fuel",
   "block.gimmespace.hp_solid_rocket_fuel": "HP Solid Rocket Fuel",
   "block.gimmespace.grain_crafter": "Grain Crafter",
+  "block.gimmespace.aluminium_plating": "Aluminium Plating",
   "block.gimmespace.limestone": "Limestone",
   "block.gimmespace.limestone_smelter": "Limestone Smelty-Thingy",
 
