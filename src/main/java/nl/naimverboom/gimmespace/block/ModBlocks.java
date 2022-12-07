@@ -30,6 +30,7 @@ public class ModBlocks {
     public static final RegistryObject<GrainCrafterBlock> GRAIN_CRAFTER = registerBlock("grain_crafter", () -> new GrainCrafterBlock(BlockBehaviour.Properties.of(Material.METAL)
             .strength(4f).requiresCorrectToolForDrops()), ModCreativeModeTab.GIMMESPACE_TAB);
     public static final RegistryObject<Block> ALUMINIUM_PLATING = registerBlock("aluminium_plating",() -> new Block(BlockBehaviour.Properties.of(Material.METAL).requiresCorrectToolForDrops().strength(2f).sound(SoundType.METAL)), ModCreativeModeTab.GIMMESPACE_TAB);
+    public static final RegistryObject<Block> POWER_SOCKET = registerBlock("power_socket",() -> new Block(BlockBehaviour.Properties.of(Material.METAL).requiresCorrectToolForDrops().strength(2f).sound(SoundType.METAL)), ModCreativeModeTab.GIMMESPACE_TAB);
     public static final RegistryObject<Block> LIMESTONE = registerBlock("limestone", () -> new Block(BlockBehaviour.Properties.of(Material.STONE).requiresCorrectToolForDrops().strength(1f)), ModCreativeModeTab.GIMMESPACE_TAB);
     public static final RegistryObject<LimestoneSmelter> LIMESTONE_SMELTER = registerBlock("limestone_smelter", () -> new LimestoneSmelter(BlockBehaviour.Properties.of(Material.METAL).requiresCorrectToolForDrops().strength(5f).noOcclusion()), ModCreativeModeTab.GIMMESPACE_TAB);
 
