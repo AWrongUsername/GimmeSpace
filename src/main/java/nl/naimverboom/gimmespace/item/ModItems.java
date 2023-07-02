@@ -10,9 +10,12 @@ import nl.naimverboom.gimmespace.GimmeSpace;
 public class ModItems {
     public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, GimmeSpace.MOD_ID);
 
-    public static final RegistryObject<Item> SCREW_BUCKET = ITEMS.register("screw_bucket", () -> new Item(new Item.Properties().stacksTo(16).tab(ModCreativeModeTab.GIMMESPACE_TAB)));
-    public static final RegistryObject<Item> AMMONIA_BOTTLE = ITEMS.register("ammonia_bottle", () -> new Item(new Item.Properties().stacksTo(64).tab(ModCreativeModeTab.GIMMESPACE_TAB)));
-    public static final RegistryObject<Item> LIMESTONE_GAS_CANISTER = ITEMS.register("limestone_gas_canister", () -> new Item(new Item.Properties().stacksTo(64).tab(ModCreativeModeTab.GIMMESPACE_TAB)));
+    public static final RegistryObject<Item> SCREW_BUCKET = ITEMS.register("screw_bucket",
+            () -> new Item(new Item.Properties().stacksTo(16)));
+    public static final RegistryObject<Item> AMMONIA_BOTTLE = ITEMS.register("ammonia_bottle",
+            () -> new Item(new Item.Properties().stacksTo(64)));
+    public static final RegistryObject<Item> LIMESTONE_GAS_CANISTER = ITEMS.register("limestone_gas_canister",
+            () -> new Item(new Item.Properties().stacksTo(64)));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

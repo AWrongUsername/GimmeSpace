@@ -18,14 +18,14 @@ public class LimestoneSmelterMenu extends AbstractContainerMenu {
     private final ContainerData data;
 
     public LimestoneSmelterMenu(int id, Inventory inv, FriendlyByteBuf extraData) {
-        this(id, inv, inv.player.level.getBlockEntity(extraData.readBlockPos()), new SimpleContainerData(2));
+        this(id, inv, inv.player.level().getBlockEntity(extraData.readBlockPos()), new SimpleContainerData(2));
     }
 
     public LimestoneSmelterMenu(int id, Inventory inv, BlockEntity entity, ContainerData data) {
         super(ModMenuTypes.LIMESTONE_SMELTER_MENU.get(), id);
         checkContainerSize(inv, 3);
         blockEntity = (LimestoneSmelterBlockEntity) entity;
-        this.level = inv.player.level;
+        this.level = inv.player.level();
         this.data = data;
 
         addPlayerInventory(inv);

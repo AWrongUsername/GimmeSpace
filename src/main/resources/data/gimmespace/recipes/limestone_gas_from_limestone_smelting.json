@@ -1,0 +1,11 @@
+{
+  "type": "gimmespace:limestone_smelting",
+  "ingredients": [
+    {
+      "item": "gimmespace:limestone"
+    }
+  ],
+  "output": {
+    "item": "gimmespace:limestone_gas_canister"
+  }
+}
